@@ -9,25 +9,25 @@ let albums = {
     "Length": "49:56",
     "Certified": "Platinum"
   },
-  "Stankonia": {
+  "stankonia": {
     "Artist": "Outkast",
     "Label": "LaFace Records",
     "Length": "73:07",
     "Certified": "Platinum"
   },
-  "Stories from the City, Stories from the Sea": {
+  "stories from the city, stories from the sea": {
     "Artist": "PJ Harvey",
     "Label": "Linford Manor",
     "Length": "47:25",
     "Certified": "none"
   },
-  "Voodoo": {
+  "voodoo": {
     "Artist": "D'Angelo",
     "Label": "Electric Lady",
     "Length": "78:54",
     "Certified": "Platinum"
   },
-  "The Moon and Antarctica": {
+  "the moon and antarctica": {
     "Artist": "Modest Mouse",
     "Label": "Epic Records",
     "Length": "59:43",
@@ -55,6 +55,6 @@ app.get('/js/main.js', (req, res) => {
   res.sendFile(__dirname + '/js/main.js');
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
